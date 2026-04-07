@@ -4,424 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Bright Dunce | Michael Coffman</title>
-  <meta name="description" content="The Bright Dunce by Michael Coffman — a Vietnam memoir about war, memory, survival, and the long aftermath." />
+
   <style>
-    :root {
-      --bg: #f5f1e8;
-      --paper: #fffdf8;
-      --ink: #1f1f1f;
-      --muted: #6b645c;
-      --accent: #6a2c2c;
-      --accent-2: #b58b57;
-      --border: #d8cfc2;
-      --max: 1100px;
-    }
-
-    * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.65;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    img {
-      max-width: 100%;
-      display: block;
+      background: #f5f1e8;
+      color: #1f1f1f;
+      line-height: 1.6;
     }
 
     .wrap {
-      width: min(92%, var(--max));
-      margin: 0 auto;
+      width: min(92%, 1000px);
+      margin: auto;
     }
 
     header {
       background: #1b1b1b;
       color: #f3eee5;
-      border-bottom: 4px solid var(--accent-2);
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      padding: 18px 0;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      font-size: 1.35rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: #f3eee5;
-      font-size: 0.98rem;
-    }
-
-    .hero {
-      padding: 70px 0 55px;
-      background: linear-gradient(rgba(20,20,20,.82), rgba(20,20,20,.82)), url('images/hero-placeholder.jpg') center/cover no-repeat;
-      color: #fff;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      color: #d9c6a6;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-size: 0.9rem;
-      margin-bottom: 12px;
-    }
-
-    h1, h2, h3 {
-      line-height: 1.2;
-      margin-top: 0;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 4.3rem);
-      margin-bottom: 16px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 720px;
-      color: #f1ebe1;
-    }
-
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 4px;
-      font-weight: bold;
-      border: 2px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border-color: #d9c6a6;
-    }
-
-    .book-card {
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.18);
-      padding: 18px;
-      border-radius: 8px;
-      backdrop-filter: blur(3px);
-    }
-
-    .book-card img {
-      border: 1px solid rgba(255,255,255,.18);
-      margin-bottom: 14px;
-    }
-
-    section {
-      padding: 62px 0;
-    }
-
-    .section-title {
-      font-size: clamp(1.7rem, 3vw, 2.6rem);
-      margin-bottom: 14px;
-    }
-
-    .lead {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 760px;
-    }
-
-    .panel {
-      background: var(--paper);
-      border: 1px solid var(--border);
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 10px 20px rgba(0,0,0,.04);
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-
-    .quote {
-      font-size: 1.2rem;
-      font-style: italic;
-      border-left: 4px solid var(--accent-2);
-      padding-left: 16px;
-      margin: 24px 0;
-      color: #3e3934;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .gallery-item {
-      background: var(--paper);
-      border: 1px solid var(--border);
-      padding: 12px;
-      border-radius: 8px;
-    }
-
-    .gallery-item span {
-      display: block;
-      margin-top: 10px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .cta {
-      background: #241d1b;
-      color: #f7f1e7;
+      padding: 20px;
       text-align: center;
     }
 
-    .cta p {
-      max-width: 760px;
-      margin: 0 auto 20px;
-      color: #ebe1d2;
+    h1, h2 {
+      text-align: center;
     }
 
-    footer {
-      background: #151515;
-      color: #e9dfd0;
-      padding: 28px 0;
-      font-size: 0.95rem;
+    section {
+      padding: 50px 0;
     }
 
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      flex-wrap: wrap;
     }
 
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
     }
 
-    @media (max-width: 860px) {
-      .hero-grid,
-      .two-col,
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 54px 0 40px;
-      }
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 8px;
+      color: #555;
     }
+
+    .author-img {
+      max-width: 300px;
+      margin: 0 auto 20px;
+      display: block;
+      border-radius: 6px;
+    }
+
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="wrap topbar">
-      <div class="brand">The Bright Dunce</div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#book">The Book</a></li>
-          <li><a href="#author">About the Author</a></li>
-          <li><a href="#photos">Photos</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">A memoir by Michael Coffman</div>
-          <h1>The Bright Dunce</h1>
-          <p>
-            A Vietnam memoir about war, memory, damage, survival, and the long shadow a life can cast.
-            This is not a polished myth. It is lived experience, remembered in the voice of the man who carried it.
-          </p>
-          <div class="button-row">
-            <a class="btn btn-primary" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Buy the Book</a>
-            <a class="btn btn-secondary" href="#author">Meet the Author</a>
-          </div>
-        </div>
+<header>
+  <h1>The Bright Dunce</h1>
+  <p>By Michael Coffman</p>
+</header>
 
-        <aside class="book-card">
-          <img src="images/book-cover.jpg" alt="Cover of The Bright Dunce by Michael Coffman" />
-          <h3>War, Recovery, and Becoming</h3>
-          <p>
-            A deeply personal memoir shaped by military service, memory, humor, and the years that followed.
-          </p>
-          <p><strong>Available in:</strong> Kindle and paperback</p>
-        </aside>
-      </div>
-    </section>
+<section>
+  <div class="wrap">
+    <h2>About the Book</h2>
+    <p>
+      A Vietnam memoir about war, memory, survival, and the long aftermath.
+      This is not a polished myth. It is lived experience, told directly.
+    </p>
+  </div>
+</section>
 
-    <section id="book">
-      <div class="wrap">
-        <h2 class="section-title">About the Book</h2>
-        <p class="lead">
-          <em>The Bright Dunce</em> begins in war, but it does not stay there. It moves through memory, damage,
-          resilience, work, reflection, and the hard business of making sense of what remains.
-        </p>
+<section>
+  <div class="wrap">
+    <h2>About the Author</h2>
 
-        <div class="two-col" style="margin-top: 28px;">
-          <div class="panel">
-            <h3>What kind of book is this?</h3>
-            <p>
-              This is a memoir rooted in Vietnam and the years after it. It does not try to tidy up experience into
-              something convenient or ceremonial. It is direct, human, sometimes darkly funny, and deeply personal.
-            </p>
-            <p>
-              It speaks not only to veterans, but to readers interested in memory, trauma, identity, aging, endurance,
-              and the strange ways people keep assembling themselves after being broken apart.
-            </p>
-          </div>
+    <img src="Mike Coffman.JPG" class="author-img">
 
-          <div class="panel">
-            <h3>Why read it?</h3>
-            <p>
-              Because this is not a borrowed voice. It is the author's own. It carries the grit, confusion, absurdity,
-              and clarity that come only from a life actually lived.
-            </p>
-            <div class="quote">
-              “This is a book about war, aftermath, humor, survival, and the long trail a life leaves behind.”
-            </div>
-            <p>
-              <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Order on Amazon</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <p>
+      Michael Coffman is a Vietnam veteran whose writing reflects on service,
+      memory, resilience, and the long arc of a life lived through conflict
+      and reconstruction.
+    </p>
+  </div>
+</section>
 
-    <section id="author">
-      <div class="wrap">
-        <h2 class="section-title">About the Author</h2>
-        <div class="two-col" style="align-items: start;">
-          <div class="panel">
-            <img src="images/michael-coffman.jpg" alt="Author Michael Coffman" />
-          </div>
-          <div class="panel">
-            <p>
-              Michael Coffman is a Vietnam veteran and writer whose work reflects on service, memory, aftermath,
-              resilience, and the unsteady way a life gets built over time.
-            </p>
-            <p>
-              <em>The Bright Dunce</em> grows out of lived experience rather than borrowed language. His writing does not
-              posture or sentimentalize. It tells the truth as he remembers it: bluntly, thoughtfully, and sometimes
-              with the kind of humor that only survives because life demanded it.
-            </p>
-            <p>
-              Beyond the book itself, Michael's story carries through decades of work, reinvention, survival, and hard-won reflection.
-              This website exists as a home for the book, the author, and the photographs and memories that accompany both.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<section>
+  <div class="wrap">
+    <h2>Photos</h2>
 
-    <section id="photos">
-      <div class="wrap">
-        <h2 class="section-title">Photos</h2>
-        <p class="lead">
-          This section can hold book images, author photos, military-era images, reunion pictures, and selected historical photos.
-          If you want a separate photo page, link this section to a full gallery page called <strong>photos.html</strong>.
-        </p>
+    <div class="gallery">
 
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="images/photo-1.jpg" alt="Gallery photo 1" />
-            <span>Author photo or current portrait</span>
-          </div>
-          <div class="gallery-item">
-            <img src="images/photo-2.jpg" alt="Gallery photo 2" />
-            <span>Vietnam-era or service-related photo</span>
-          </div>
-          <div class="gallery-item">
-            <img src="images/photo-3.jpg" alt="Gallery photo 3" />
-            <span>Book signing, reunion, or archival image</span>
-          </div>
-        </div>
-
-        <p style="margin-top: 20px;">
-          <a class="btn btn-primary" href="photos.html">Open Full Photo Page</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="cta" id="contact">
-      <div class="wrap">
-        <h2 class="section-title">Get in Touch</h2>
-        <p>
-          For reader comments, media inquiries, speaking invitations, or updates about the book, use the contact details below
-          or connect through your preferred platform.
-        </p>
-        <p>
-          <strong>Email:</strong> yourname@example.com<br />
-          <strong>Amazon:</strong> <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Book page</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-grid">
       <div>
-        <strong>The Bright Dunce</strong><br />
-        Michael Coffman
+        <img src="(2) Grad 1965.jpg">
+        <div class="caption">
+          Boot Camp – The Beginning
+        </div>
       </div>
+
       <div>
-        © 2026 The Bright Dunce. All rights reserved.
+        <img src="(3) Chu Lai 1966.JPG">
+        <div class="caption">
+          Chu Lai / Da Nang – In Country
+        </div>
       </div>
+
+      <div>
+        <img src="Mike Coffman.JPG">
+        <div class="caption">
+          Later Years – Board President
+        </div>
+      </div>
+
     </div>
-  </footer>
-<br><br>
-<img src="Mike Coffman.JPG" width="300">
+
+  </div>
+</section>
+
+<footer style="background:#111;color:#ddd;text-align:center;padding:20px;">
+  © 2026 The Bright Dunce – Michael Coffman
+</footer>
+
 </body>
 </html>
