@@ -27,12 +27,22 @@
       line-height: 1.65;
     }
 
-    a { color: var(--accent); text-decoration: none; }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
     a:hover { text-decoration: underline; }
 
-    img { max-width: 100%; display: block; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-    .wrap { width: min(92%, var(--max)); margin: 0 auto; }
+    .wrap {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
 
     header {
       background: #1b1b1b;
@@ -65,7 +75,10 @@
       flex-wrap: wrap;
     }
 
-    nav a { color: #f3eee5; font-size: 0.98rem; }
+    nav a {
+      color: #f3eee5;
+      font-size: 0.98rem;
+    }
 
     .hero {
       padding: 70px 0 55px;
@@ -88,7 +101,10 @@
       margin-bottom: 12px;
     }
 
-    h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin-top: 0;
+    }
 
     h1 {
       font-size: clamp(2.2rem, 5vw, 4.3rem);
@@ -116,8 +132,16 @@
       border: 2px solid transparent;
     }
 
-    .btn-primary { background: var(--accent); color: #fff; }
-    .btn-secondary { background: transparent; color: #fff; border-color: #d9c6a6; }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border-color: #d9c6a6;
+    }
 
     .book-card {
       background: rgba(255,255,255,.08);
@@ -132,7 +156,9 @@
       margin-bottom: 14px;
     }
 
-    section { padding: 62px 0; }
+    section {
+      padding: 62px 0;
+    }
 
     .section-title {
       font-size: clamp(1.7rem, 3vw, 2.6rem);
@@ -222,7 +248,9 @@
         grid-template-columns: 1fr;
       }
 
-      .hero { padding: 54px 0 40px; }
+      .hero {
+        padding: 54px 0 40px;
+      }
     }
   </style>
 </head>
@@ -255,32 +283,38 @@
     This is not a polished myth. It is lived experience, remembered in the voice of the man who carried it.
   </p>
   <div class="button-row">
-    <a class="btn btn-primary" href="https://www.amazon.com/s?k=The+Bright+Dunce+Coffman" target="_blank">Buy the Book</a>
+    <a class="btn btn-primary" href="https://www.amazon.com/" target="_blank">Buy the Book</a>
     <a class="btn btn-secondary" href="#author">Meet the Author</a>
   </div>
 </div>
 
-<!-- ✅ ONLY CHANGE IS HERE -->
 <aside class="book-card">
-  <img src="Bright_Dunce_Cover.png" alt="Cover of The Bright Dunce by Michael Coffman" />
+  <img src="images/book-cover.jpg" />
   <h3>War, Recovery, and Becoming</h3>
-  <p>
-    A deeply personal memoir shaped by military service, memory, humor, and the years that followed.
-  </p>
+  <p>A deeply personal memoir shaped by military service, memory, humor, and the years that followed.</p>
   <p><strong>Available in:</strong> Kindle and paperback</p>
 
   <hr style="margin:20px 0;border-color:rgba(255,255,255,.2);" />
 
-  <img src="believing_was_easier_cover.png" alt="Believing Was Easier cover" />
+  <img src="images/believing_was_easier_cover.png" />
   <h3>Believing Was Easier</h3>
   <p><em>Clarity Is Its Own Kind of Hell</em></p>
-  <p>
-    A memoir currently in development, tracing the path from belief to clarity—
-    from war, to family, to the fracture of a relationship once assumed unbreakable.
-  </p>
+  <p>A memoir currently in development.</p>
   <p><strong>Status:</strong> Manuscript in progress — publication forthcoming</p>
 </aside>
 
 </div>
 </section>
+
+</main>
+
+<footer>
+<div class="wrap footer-grid">
+<div><strong>The Bright Dunce</strong><br />Michael Coffman</div>
+<div>© 2026 The Bright Dunce. All rights reserved.</div>
+</div>
+</footer>
+
+</body>
+</html>
 
