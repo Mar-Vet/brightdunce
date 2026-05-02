@@ -241,6 +241,11 @@
       flex-wrap: wrap;
     }
 
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
     @media (max-width: 860px) {
       .hero-grid,
       .two-col,
@@ -255,66 +260,166 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="wrap topbar">
+      <div class="brand">The Bright Dunce</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#book">The Book</a></li>
+          <li><a href="#author">About the Author</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="wrap topbar">
-    <div class="brand">The Bright Dunce</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#book">The Book</a></li>
-        <li><a href="#author">About the Author</a></li>
-        <li><a href="#photos">Photos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">A memoir by Michael Coffman</div>
+          <h1>The Bright Dunce</h1>
+          <p>
+            A Vietnam memoir about war, memory, damage, survival, and the long shadow a life can cast.
+            This is not a polished myth. It is lived experience, remembered in the voice of the man who carried it.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="https://www.amazon.com/s?k=The+Bright+Dunce+Coffman" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+            <a class="btn btn-secondary" href="#author">Meet the Author</a>
+          </div>
+        </div>
 
-<main>
-<section class="hero" id="home">
-<div class="wrap hero-grid">
+        <aside class="book-card">
+          <img src="Bright_Dunce_Cover.png" alt="Cover of The Bright Dunce by Michael Coffman" />
+          <h3>War, Recovery, and Becoming</h3>
+          <p>
+            A deeply personal memoir shaped by military service, memory, humor, and the years that followed.
+          </p>
+          <p><strong>Available in:</strong> Kindle and paperback</p>
+        </aside>
+      </div>
+    </section>
 
-<div>
-  <div class="eyebrow">A memoir by Michael Coffman</div>
-  <h1>The Bright Dunce</h1>
-  <p>
-    A Vietnam memoir about war, memory, damage, survival, and the long shadow a life can cast.
-    This is not a polished myth. It is lived experience, remembered in the voice of the man who carried it.
-  </p>
-  <div class="button-row">
-    <a class="btn btn-primary" href="https://www.amazon.com/" target="_blank">Buy the Book</a>
-    <a class="btn btn-secondary" href="#author">Meet the Author</a>
-  </div>
-</div>
+    <section id="book">
+      <div class="wrap">
+        <h2 class="section-title">About the Book</h2>
+        <p class="lead">
+          <em>The Bright Dunce</em> begins in war, but it does not stay there. It moves through memory, damage,
+          resilience, work, reflection, and the hard business of making sense of what remains.
+        </p>
 
-<aside class="book-card">
-  <img src="images/book-cover.jpg" />
-  <h3>War, Recovery, and Becoming</h3>
-  <p>A deeply personal memoir shaped by military service, memory, humor, and the years that followed.</p>
-  <p><strong>Available in:</strong> Kindle and paperback</p>
+        <div class="two-col" style="margin-top: 28px;">
+          <div class="panel">
+            <h3>What kind of book is this?</h3>
+            <p>
+              This is a memoir rooted in Vietnam and the years after it. It does not try to tidy up experience into
+              something convenient or ceremonial. It is direct, human, sometimes darkly funny, and deeply personal.
+            </p>
+            <p>
+              It speaks not only to veterans, but to readers interested in memory, trauma, identity, aging, endurance,
+              and the strange ways people keep assembling themselves after being broken apart.
+            </p>
+          </div>
 
-  <hr style="margin:20px 0;border-color:rgba(255,255,255,.2);" />
+          <div class="panel">
+            <h3>Why read it?</h3>
+            <p>
+              Because this is not a borrowed voice. It is the author's own. It carries the grit, confusion, absurdity,
+              and clarity that come only from a life actually lived.
+            </p>
+            <div class="quote">
+              “This is a book about war, aftermath, humor, survival, and the long trail a life leaves behind.”
+            </div>
+            <p>
+              <a href="https://www.amazon.com/s?k=The+Bright+Dunce+Coffman" target="_blank" rel="noopener noreferrer">Order on Amazon</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <img src="images/believing_was_easier_cover.png" />
-  <h3>Believing Was Easier</h3>
-  <p><em>Clarity Is Its Own Kind of Hell</em></p>
-  <p>A memoir currently in development.</p>
-  <p><strong>Status:</strong> Manuscript in progress — publication forthcoming</p>
-</aside>
+    <section id="author">
+      <div class="wrap">
+        <h2 class="section-title">About the Author</h2>
+        <div class="two-col" style="align-items: start;">
+          <div class="panel">
+            <img src="Mike Coffman.JPG" alt="Author Michael Coffman" />
+          </div>
+          <div class="panel">
+            <p>
+              Michael Coffman is a Vietnam veteran and writer whose work reflects on service, memory, aftermath,
+              resilience, and the unsteady way a life gets built over time.
+            </p>
+            <p>
+              <em>The Bright Dunce</em> grows out of lived experience rather than borrowed language. His writing does not
+              posture or sentimentalize. It tells the truth as he remembers it: bluntly, thoughtfully, and sometimes
+              with the kind of humor that only survives because life demanded it.
+            </p>
+            <p>
+              Beyond the book itself, Michael's story carries through decades of work, reinvention, survival, and hard-won reflection.
+              This website exists as a home for the book, the author, and the photographs and memories that accompany both.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
-</section>
+    <section id="photos">
+      <div class="wrap">
+        <h2 class="section-title">Photos</h2>
+        <p class="lead">
+          This section can hold book images, author photos, military-era images, reunion pictures, and selected historical photos.
+          If you want a separate photo page, link this section to a full gallery page called <strong>photos.html</strong>.
+        </p>
 
-</main>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="(2) Grad 1965.jpg" alt="Boot Camp – The Beginning" />
+            <span>Boot Camp – The Beginning</span>
+          </div>
+          <div class="gallery-item">
+            <img src="(3) Chu Lai 1966.JPG" alt="Chu Lai / Da Nang – In Country" />
+            <span>Chu Lai / Da Nang – In Country</span>
+          </div>
+          <div class="gallery-item">
+            <img src="Mike-at-the-wall.png" alt="Mike at the Wall" />
+            <span>Mike at the Wall</span>
+          </div>
+        </div>
 
-<footer>
-<div class="wrap footer-grid">
-<div><strong>The Bright Dunce</strong><br />Michael Coffman</div>
-<div>© 2026 The Bright Dunce. All rights reserved.</div>
-</div>
-</footer>
+        <p style="margin-top: 20px;">
+          <a class="btn btn-primary" href="photos.html">Open Full Photo Page</a>
+        </p>
+      </div>
+    </section>
 
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+          For reader comments, media inquiries, speaking invitations, or updates about the book, use the contact details below
+          or connect through your preferred platform.
+        </p>
+        <p>
+          <strong>Email:</strong> coffmanmcny@gmail.com<br />
+          <strong>Amazon:</strong> <a href="https://www.amazon.com/s?k=The+Bright+Dunce+Coffman" target="_blank" rel="noopener noreferrer">Book page</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>The Bright Dunce</strong><br />
+        Michael Coffman
+      </div>
+      <div>
+        © 2026 The Bright Dunce. All rights reserved.
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
